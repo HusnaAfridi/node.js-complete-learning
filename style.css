@@ -1,0 +1,5 @@
+body{margin:0;font-family:arial;background:linear-gradient(to right,#6a11cb,#2575fc);color:#fff;text-align:center}
+nav{background:#111;padding:15px;display:flex;gap:25px;align-items:center}
+nav b{font-size:22px}
+nav a{color:#fff;text-decoration:none}
+h1{font-size:50px;margin-top:120px}

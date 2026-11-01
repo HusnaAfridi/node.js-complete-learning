@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+</head>
+<body>
+    <h1>MongoDB Data on UI</h1>
+    <table border= "1">
+        <tr>
+            <th> Name </th>
+            <th> Age </th>
+            <th> Email </th>
+        </tr>
+        <% result.forEach((s)=>{ %>
+        <tr>
+        <td><%= s.name %></td>
+        <td><%= s.age %></td>
+        <td><%= s.email %></td>
+        <td><a href="/ui/student/<%= s._id %>">update</a></td>
+        </tr>
+        <% }) %>
+    </table>
+</body>
+</html>

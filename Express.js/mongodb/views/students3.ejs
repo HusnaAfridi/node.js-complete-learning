@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Add Student</h2>
+<form action="/add" method="POST">
+  <input name="name" placeholder="Name" required>
+  <input name="city" placeholder="City" required>
+  <input name="age" type="number" placeholder="Age" required>
+  <input name="email" placeholder="Email" required>
+  <button type="submit">Save</button>
+</form>
+
+<hr>
+<h2>Students List</h2>
+<table border="1">
+<tr><th>Name</th><th>City</th><th>Age</th><th>Email</th></tr>
+<% students.forEach(s=>{ %>
+<tr><td><%= s.name %></td><td><%= s.city %></td><td><%= s.age %></td><td><%= s.email %></td></tr>
+<% }) %>
+</table>
+</body>
+</html>

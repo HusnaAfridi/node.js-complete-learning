@@ -1,0 +1,61 @@
+//node is a runtime environment for JS.
+//js is a client site scripting language ,NODE convert it to server site scripting language.
+//node js is used for real time application and making API.
+
+var a=180;//can be changed
+let b=360;
+const c=720;//cannot be changed
+let d=400;//can be changed
+console.log(a+b+c+d);
+//var is function scope
+//let and const are block scope
+//var can be redeclared and updated
+//let can be updated but cannot be redeclared
+//const cannot be updated and cannot be redeclared
+//using if else statement
+const e=300;
+if (e==200){
+    console.log("This is true");
+} else{
+    console.log("This is false");//this is false
+}
+//using function
+function HUSNA(item){
+    console.log(item);
+}
+console.log(HUSNA("This is a function"));//this is a function
+//for while loop
+for (var a=0;a<=10;a++){
+    console.log(a);
+}
+var a=0;
+while(a<=10){
+    console.log(a);
+    a++;
+}
+//for while loop is used to repeat a block of code until a specified condition is true.
+//  The 'for' loop is typically used when the number of iterations is known.
+// while the 'while' loop is used when the number of iterations is not predetermined.
+//================================================================================
+//using object
+var user={
+    name:"Husna",
+    age:19,
+    city:"peshawar"
+}
+console.log(user.name);
+console.log(user.age);
+console.log(user.city);
+console.log(user);
+//================================================================================
+//using array
+var arr=["Husna",19,"peshawar"];
+console.log(arr[0]);
+console.log(arr[1]);
+console.log(arr[2]);
+console.log(arr);
+//================================================================================
+//importing modules(making new file and importing it in main file)
+const fs=require('fs');
+fs.writeFileSync("import.txt","This is a file created by Husna");
+//form a new file of name import.txt having this text "This is a file created by Husna"
